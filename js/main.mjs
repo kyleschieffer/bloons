@@ -10,7 +10,7 @@ const scene = new THREE.Scene();
 
 // Load the background texture
 const textureLoader = new THREE.TextureLoader();
-textureLoader.load("bliss.jpg", function(texture) {
+textureLoader.load("./bliss.jpg", function(texture) {
     scene.background = texture;
 });
 
@@ -32,7 +32,7 @@ let materialNames = {};
 
 // Load the file
 loader.load(
-  `models/${objToRender}.glb`,
+  `./models/${objToRender}.glb`,
   function (gltf) {
     // If the file is loaded, add it to the scene
     object = gltf.scene;
