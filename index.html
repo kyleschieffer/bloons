@@ -38,7 +38,18 @@
             <option value="#000080">Navy</option>
         </datalist>
     </div>
-    
+
+    <script type="text/javascript">
+        // Add an event listener for when the page finishes loading
+        window.addEventListener("load", function () {
+          // Trigger color change event for each color picker input
+          for (let i = 1; i <= 6; i++) {
+            const colorPicker = document.getElementById(`component-${i}-color`);
+            colorPicker.dispatchEvent(new Event('input'));
+          }
+        });
+      </script>
+      
     <script type="module" src="./js/main.mjs"></script>
 </body>
 </html>
