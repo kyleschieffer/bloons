@@ -19,7 +19,7 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 camera.position.set(.25, .03, .6);
 
 // Set which object to render
-let objToRender = 'bloons';
+let objToRender = 'hand';
 
 // The object
 let object;
