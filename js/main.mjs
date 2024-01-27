@@ -72,11 +72,11 @@ topLight.position.set(500, 500, 500);
 topLight.castShadow = true;
 scene.add(topLight);
 
-const ambientLight = new THREE.AmbientLight(0x333333, objToRender === "bloons" ? 5 : 1);
+const ambientLight = new THREE.AmbientLight(0x333333, objToRender === "hand" ? 5 : 1);
 scene.add(ambientLight);
 
 // This adds controls to the camera, so we can rotate / zoom it with the mouse
-if (objToRender === "bloons") {
+if (objToRender === "hand") {
   const controls = new OrbitControls(camera, renderer.domElement);
   controls.addEventListener('change', () => {
     console.log('Camera position:', camera.position);
